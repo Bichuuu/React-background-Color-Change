@@ -1,0 +1,36 @@
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+  overflow: hidden;
+}
+
+.bubble {
+  position: absolute;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 5s infinite ease-in-out;
+  z-index: 1;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+.centerbox {
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  margin-left: -300px;
+}
+
+.centerbox button {
+  margin: 100px;
+}
+
